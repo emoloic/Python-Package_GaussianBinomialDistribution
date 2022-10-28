@@ -41,7 +41,7 @@ Note that [pypi.org](https://pypi.org/) and [test.pypy.org](https://test.pypi.or
 Remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
 
 Inside our package folder, we need to add extra file.
-* **license.txt** - where you put copyright information. Example: MIT License(https://opensource.org/licenses/MIT)
+* **license.txt** - where you put copyright information. Example: [MIT License](https://opensource.org/licenses/MIT)
 * **README.md** - where you document how your package works.
 * **setup.cfg** - where you define your README.md file.
 

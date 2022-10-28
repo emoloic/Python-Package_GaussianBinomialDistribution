@@ -49,42 +49,36 @@ Inside our package folder, we need to add extra file.
 You first need to open a terminal in this folder and then enter the following commands:
 
 1. Build our package
-```
-bash
+```bash
 python setup.py sdist 
 ```
 This command will create many files. Inside the directory dist, there is a file with .tar extension that you are going to end up uploading to the PyPi repository.
 
 2. Install **twine** (library used to upload package to PyPi)
-```
-bash
+```bash
 pip install twine
 ```
 
 3. Upload to the PyPi test repository
-```
-bash
+```bash
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```
 You are required to provide your username and password from PyPi test website.
 
 To install your package from the PyPi test repository, run the following command:
-```
-bash
+```bash
 pip install --index-url https://test.pypi.org/simple/ (package-name)
 ```
 You need to provide the name of the package you defined.
 Once you're satisfied (all tests passed), you can now upload the package in PyPi repository where the package will be publicly available.
 
 4. Upload to the PyPi repository
-```
-bash
+```bash
 twine upload dist/*
 ```
 Once again, you need to provide your username and password from PyPi website.
 To install the package from PyPi, run the folloowing command:
-```
-bash
+```bash
 pip install (python-package)
 ```
 As you might notice, you do not need to provide the flag (--index-url) since our package is now public. Everyone can download it.
@@ -94,9 +88,7 @@ As you might notice, you do not need to provide the flag (--index-url) since our
 
 **Adding two gaussians**
 
-```
-bash
-
+```bash
 from gaussian-binomial-distributions import Gaussian
 
 guassian_one = Gaussian(5, 2)
@@ -107,8 +99,7 @@ print(guassian_sum.stdev)
 ```
 **Results:**
 
-```
-bash
+```bash
 15
 2.23606797749979
 ```

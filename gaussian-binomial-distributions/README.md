@@ -3,14 +3,12 @@
 In other to use this package, please make sure matplotlib library is already installed in your python environment.
 
 You can install it by enter the following command:
-```
-bash
+```bash
 pip install matplotlib
 ```
 
 Once the libary is installed, run the following command to install the package:
-```
-bash
+```bash
 pip install gaussian-binomial-distributions
 ```
 
@@ -18,9 +16,7 @@ pip install gaussian-binomial-distributions
 
 **Adding two gaussians**
 
-```
-bash
-
+```bash
 from gaussian-binomial-distributions import Gaussian
 
 guassian_one = Gaussian(5, 2)
@@ -31,8 +27,7 @@ print(guassian_sum.stdev)
 ```
 **Results:**
 
-```
-bash
+```bash
 15
 2.23606797749979
 ```

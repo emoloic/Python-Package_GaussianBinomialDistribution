@@ -17,6 +17,7 @@ If you would like to review the Gaussian (normal) distribution and binomial dist
 A Python package does not need to use object-oriented programming. We could simply have a Python module with a set of functions. However, most—if not all—of the popular Python packages take advantage of object-oriented programming for a few reasons:
 
 1- Object-oriented programs are relatively easy to expand, especially because of inheritance.
+
 2- Object-oriented programs obscure functionality from the user. Consider scipy packages. You don't need to know how the actual code works in order to use its classes and methods.
 
 
@@ -27,8 +28,8 @@ A Python package does not need to use object-oriented programming. We could simp
 
 ## Making a Package
 
-A **package** is a collection of Python modules. A python package also need a **__init__.py** file. This file is telling Python that the folder contains a package. The code inside this file gets run whenever you import a package inside a python program. You can can have a look of our package called [Gaussian-Binomial-distributions](./Gaussian-Binomial-distributions)
-We also need to create a file called **setup.py**. This file should be at the same level as our Python package [Gaussian-Binomial-distributions](./Gaussian-Binomial-distributions). It's necessary for **pip install** (pip will automatically look for this file). This file contains informations (or metadata) about the package.
+A **package** is a collection of Python modules. A python package also need a **__init__.py** file. This file is telling Python that the folder contains a package. The code inside this file gets run whenever you import a package inside a python program. You can can have a look of our package called [gaussian-binomial-distributions](./gaussian-binomial-distributions)
+We also need to create a file called **setup.py**. This file should be at the same level as our Python package [gaussian-binomial-distributions](./gaussian-binomial-distributions). It's necessary for **pip install** (pip will automatically look for this file). This file contains informations (or metadata) about the package.
 
 
 ## Putting code on PyPi

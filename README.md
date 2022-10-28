@@ -92,7 +92,7 @@ As you might notice, you do not need to provide the flag (--index-url) since our
 from gaussian-binomial-distributions import Gaussian
 
 guassian_one = Gaussian(5, 2)
-guassian_two = Gaussian(10, 1=)
+guassian_two = Gaussian(10, 1)
 guassian_sum = guassian_one + guassian_two
 print(guassian_sum.mean)
 print(guassian_sum.stdev)
